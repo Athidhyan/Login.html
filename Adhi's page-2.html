@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/lo.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhi's page</title>
+  </head>
+  <body>
+    <form action="http://127.0.0.1:5500/sign.html">
+      
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+          }
+
+          .login-container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #ff00ea;
+            border: 1px solid #000000;
+            border-radius: 5px;
+          }
+
+          .login-container {
+            text-align: center;
+          }
+
+          .login-container input[type="text"],
+          .login-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #0ed4f7;
+            border-radius: 3px;
+          }
+
+          .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            background-color: #5352a8;
+            color: #ffffff;
+            border-radius: 3px;
+            cursor: pointer;
+          }
+
+          .login-container input[type="submit"]:hover {
+            background-color: #4c00ff;
+          }
+        </style>
+      
+
+      
+        <div class="login-container">
+          <h2>Log Here!</h2>
+          
+            <input type="text" placeholder="Username" value="Adhi" minlength="3">
+            <input type="password" placeholder="Password" min="4" required="">
+            <input type="submit" value="Login">
+          
+        </div></form>
+
+            
+        <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+      
+
+</body></html>
